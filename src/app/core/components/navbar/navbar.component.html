@@ -1,0 +1,31 @@
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="https://img.freepik.com/vetores-gratis/vetor-de-gradiente-de-logotipo-colorido-de-passaro_343694-1365.jpg?w=826&t=st=1712777830~exp=1712778430~hmac=a1942d43ec9e397656702c9ff4a5223d70ae10a815a691c6b80868dffc946e47" alt="Bootstrap" width="40" height="24">
+          </a>
+      <a class="navbar-brand" href="#">Blog Project</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Admin
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" [routerLink]="['/admin/categories']">Categories</a></li>
+              <!-- <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+         
+        </ul>
+      
+      </div>
+    </div>
+  </nav>
