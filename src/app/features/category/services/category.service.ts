@@ -24,10 +24,14 @@ export class CategoryService {
   }
 
   getCategoryById(id: String): Observable<Category>{
-    return this.http.get<Category>(`${environment.apiBaseUrl}/api/Categories/${id}`)
+    return this.http.get<Category>(`${environment.apiBaseUrl}/api/Categories/${id}`);
   }
 
   updateCategory(id: String, updateCategoryRequest: UpdateCategoryRequest): Observable<Category>{
-    return this.http.put<Category>(`${environment.apiBaseUrl}/api/Categories/${id}`, updateCategoryRequest)
+    return this.http.put<Category>(`${environment.apiBaseUrl}/api/Categories/${id}`, updateCategoryRequest);
+  }
+
+  deleteCategory(id: String): Observable<Category>{
+    return this.http.delete<Category>(`${environment.apiBaseUrl}/api/Categories/${id}`);
   }
 }
