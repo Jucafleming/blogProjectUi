@@ -1,10 +1,10 @@
 export interface AddBlogPost{
-    title: String;
-    shortDescription: String;
-    content: String;
-    featuredImageUrl: String;
-    urlHandle: String;
-    author: String;
-    publishedDate: Date;
+    title: string;
+    shortDescription: string;
+    content: string;
+    featureImageUrl: string;
+    urlHandle: string;
+    author: string;
+    publishDate: Date;
     isVisible: boolean;
 }
